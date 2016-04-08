@@ -64,3 +64,5 @@ sed -i '475i\        sql' /etc/freeradius/sites-enabled/default
 
 systemctl restart freeradius
 systemctl start pppoe-server
+systemctl enable freeradius
+systemctl enable pppoe-server
